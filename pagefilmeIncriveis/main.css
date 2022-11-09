@@ -1,0 +1,106 @@
+:root {
+    --azul: #2a93f5;
+    --preta: #141414;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul);
+    border-radius: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/catalogo.jpg');
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-size: cover;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .imagenzinha {
+    margin-left: 40px;
+    color: var(--azul);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: 'Arial Black', Times;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.search {
+    margin-right: 200px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid silver;
+    background: none;
+    width: 500px;
+    color: white;
+}
+
+header .container .search i {
+    margin: 150px;
+}
+
+nav {
+    margin-right: 80px;
+}
+
+.box-filme {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.cabeca .container .filme {
+    margin-left: 500px;
+    margin-top: 75px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box-filme:hover {
+    transform: scale(1.07,1.07);
+}
+
+.continue-assistindo {
+    font-family: 'Arial Black', Times;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-top: 25px;
+    color: var(--azul);
+}
